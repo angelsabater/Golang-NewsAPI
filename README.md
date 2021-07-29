@@ -1,27 +1,30 @@
-# News Demo starter files
+# News Demo
 
-Starter files for the News application built with Go. Tutorial:
-https://freshman.tech/web-development-with-go/
+Tutorial: https://freshman.tech/web-development-with-go/
 
-Here's what the [completed application](https://freshman-news.herokuapp.com/)
-looks like:
+## Environment
 
-![demo](https://ik.imagekit.io/freshman/news-demo_MrYio9GKlzSi.png)
-
-The code in this repo is meant to be a starting point for anyone following
-along with the tutorial.
-
-## Prerequisites
-
-You need to have [Go](https://golang.org/dl/) installed on your computer. The
-version used to test the code in the tutorial is **1.15.3**.
+- **[Go 1.16.6](https://golang.org/dl/)**
 
 ## Get started
 
 - Clone or download this repository to your filesystem.
+- Create your own environment file
 
 ```bash
-$ git clone https://github.com/Freshman-tech/news-demo-starter-files
+$ touch .env
 ```
 
-- `cd` into the project directory and follow along with the [tutorial](https://freshman.tech/web-development-with-go/).
+```yml
+PORT=8000
+NEWS_API_KEY=<your API key>
+```
+  > *Note: Sign up here for a free API key. https://newsapi.org/account*
+
+## Run the project
+
+```bash
+$ go build
+$ ./news-demo-starter-files
+```
+
